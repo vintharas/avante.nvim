@@ -180,7 +180,7 @@ function M.generate_prompts(opts)
   end
 
   local project_root = Utils.root.get()
-  Path.prompts.initialize(Path.prompts.get_templates_dir(project_root))
+  Path.prompts.initialize(Path.prompts.get_templates_dir(project_root), project_root)
 
   local system_info = Utils.get_system_info()
 
